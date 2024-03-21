@@ -17,7 +17,7 @@ function Navbar() {
   return (
     <div className='flex justify-between items-center w-full h-20 px-4 absolute z-10 text-white'>
         <div>
-            <h1 onClick={handleNav} className={logo?'hidden':'block mx-4'}>sherryBEACHES.</h1>
+            <h1 className={logo?'hidden':'block mx-4'}>sherryBEACHES.</h1>
         </div>
         <ul className='hidden md:flex'>
             <li>Home</li>
@@ -34,7 +34,7 @@ function Navbar() {
             {nav?<AiOutlineClose className='text-black' size={20}/>:<HiOutlineMenuAlt4 size={20}/>}
         </div>
         {/* Hamburger Menu */}
-        <div onClick={handleNav} className={nav?'absolute text-black left-0 top-0 w-full bg-gray-100/90 px--4 py-7 flex flex-col':'hidden'}>
+        <div className={nav?'absolute text-black left-0 top-0 w-full bg-gray-100/90 px--4 py-7 flex flex-col':'hidden'}>
             <ul>
                 <h1 className='mx-2'>sherryBEACHES.</h1>
                 <li className='border-b'>Home</li>
